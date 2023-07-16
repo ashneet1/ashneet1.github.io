@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -47,12 +50,19 @@
     .open-button.open {
       transform: translateX(200px); /* Move the button when the sidebar is open */
     }
+    .github-icon {
+      font-size: 24px;
+      color: #fff;
+      margin-left: 20px;
+    }
   </style>
 </head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
   <header>
     <h1>Ashneet Nagi</h1>
+    <a href="https://github.com/ashneet1" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github github-icon"></i>
+    </a>
   </header>
   <!-- Rest of your website content goes here -->
 
@@ -64,7 +74,8 @@
 
   <div id="main">
   <div class="w3-teal">
-    <button id="openNav" class="w3-button" onclick="w3_open()">&#9776;</button>
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <i class="fab fa-github github-icon"></i>
   </div>
 </div>
   <script>
