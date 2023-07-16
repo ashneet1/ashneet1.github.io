@@ -17,14 +17,58 @@
     h1 {
       margin: 0;
     }
+     /* Styling for the sidebar */
+      .sidebar {
+      position: fixed;
+      top: 0;
+      left: -200px; /* Initial position off-screen */
+      width: 200px;
+      height: 100vh;
+      background-color: #f1f1f1;
+      padding: 20px;
+      transition: left 0.3s ease; /* Transition effect for smooth animation */
+    }
+    /* Styling for the content */
+    .content {
+      margin-left: 20px; /* Adjust this value to accommodate the sidebar width and padding */
+      padding: 20px;
+    }
+    
+    /* Styling for the button */
+    .open-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #f1f1f1;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease; /* Transition effect for smooth animation */
+    }
+    .open-button.open {
+      transform: translateX(200px); /* Move the button when the sidebar is open */
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Ashneet Nagi</h1>
   </header>
-  
   <!-- Rest of your website content goes here -->
-  
+  <div id="sidebar" class="sidebar">
+    <!-- Sidebar content goes here -->
+    <h3>Sidebar</h3>
+    <ul>
+      <li>Menu Item 1</li>
+      <li>Menu Item 2</li>
+      <li>Menu Item 3</li>
+    </ul>
+    </div>
+    <div class="content">
+    <!-- Main content goes here -->
+    <h1>Main Content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+
+  <div id="openButton" class="open-button">Toggle Sidebar</div>
 </body>
 </html>
