@@ -48,6 +48,14 @@
       transform: translateX(200px); /* Move the button when the sidebar is open */
     }
   </style>
+   <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      var openButton = document.getElementById("openButton");
+      sidebar.classList.toggle("open");
+      openButton.classList.toggle("open");
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -69,6 +77,6 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 
-  <div id="openButton" class="open-button">Toggle Sidebar</div>
+  <div id="openButton" class="open-button" onclick="toggleSidebar()">Toggle Sidebar</div>
 </body>
 </html>
