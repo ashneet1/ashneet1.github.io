@@ -1,3 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    ocument.getElementById('closeNAV').addEventListener('click',w3_close())
+    document.getElementById('openNav').addEventListener('click',w3_open)
+    document.getElementById('closeNav').addEventListener('click',w3_close)
 })
