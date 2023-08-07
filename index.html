@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  '''Need to make template of the body(to then refer 
+  to that template in other html sheets ex) about me, how to make a
+  template has been favourited in google, and make all css styling bootstrap if possible'''
   <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -12,7 +15,6 @@
       }
       
       header {
-        background-color: #94e0cd;
         color: #fff;
         padding: 20px;
       }
@@ -20,36 +22,7 @@
       h1 {
         margin: 0;
       }
-      /* Styling for the sidebar */
-        .sidebar {
-        position: fixed;
-        top: 0;
-        left: -200px; /* Initial position off-screen */
-        width: 200px;
-        height: 100vh;
-        background-color: #f1f1f1;
-        padding: 20px;
-        transition: left 0.3s ease; /* Transition effect for smooth animation */
-      }
-      /* Styling for the content */
-      .content {
-        margin-left: 20px; /* Adjust this value to accommodate the sidebar width and padding */
-        padding: 20px;
-      }
-      
-      /* Styling for the button */
-      .open-button {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        background-color: #f1f1f1;
-        padding: 10px 15px;
-        cursor: pointer;
-        transition: transform 0.3s ease; /* Transition effect for smooth animation */
-      }
-      .open-button.open {
-        transform: translateX(200px); /* Move the button when the sidebar is open */
-      }
+
       .github-icon {
         font-size: 30px;
         color: #fff;
@@ -66,33 +39,23 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>Ashneet Nagi</h1>
-    </header>
-    <!-- Rest of your website content goes here -->
-
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-      <button id = "closeNav" button class="w3-bar-item w3-button w3-large" 
-      >Close &times;</button>
-      <a href="aboutMe.html" class="w3-bar-item w3-button">About me</a>
-      <a href="#" class="w3-bar-item w3-button">Skills</a>
-      <a href="#" class="w3-bar-item w3-button">Experience</a>
-      <a href="#" class="w3-bar-item w3-button">Resume</a>
-    </div>
-
-    <div id="main">
-      <div class="w3-teal">
-        <button id="openNav" class="w3-button w3-teal w3-xlarge">&#9776;</button>
-        <a href="https://github.com/ashneet1" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github github-icon"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ashneetnagi/" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin social-icons"></i>
-        </a>
+    <div class = "row"> 
+      <div class="col-md-12">
+        <header>
+          <h1>Ashneet Nagi</h1>
+          <a href="https://github.com/ashneet1" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github github-icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ashneetnagi/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin social-icons"></i>
+          </a>
+        </header>
       </div>
-    </div>
+      </div>
+      
+   
     <script src="eventListener.js"></script>
     <script src="buttonListeners.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
